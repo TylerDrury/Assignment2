@@ -196,6 +196,6 @@ public class Aggignment2Test {
         } catch (ParseException ex) {
             System.err.println("Invalid JSON Format");
             fail("Invalid JSON Format");
-        }
+        }    
     }
 }
