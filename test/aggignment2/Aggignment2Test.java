@@ -177,6 +177,19 @@ public class Aggignment2Test {
         assertEquals(expectedresult, result);
     }
     @Test
+    public void testStudentEqualsBoth() {
+       System.out.println("equalsBoth");
+        Student instance = new Student();
+        instance.setName("bob");
+        instance.setId("C1231");
+        Student instance2 = new Student();
+        instance2.setName("Tom");
+        instance2.setId("C1235");
+        boolean expectedresult = false;
+        boolean result = instance.equals(instance2);
+        assertEquals(expectedresult, result);
+    }
+    @Test
     public void testStudentEqualsName() {
        System.out.println("equalsName");
         Student instance = new Student();
