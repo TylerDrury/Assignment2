@@ -24,7 +24,10 @@ public class Student {
     private double grade;
 
     public Student() {
-
+        name ="";
+        id ="";
+        gender="";
+        grade=0;
     }
 
     public Student(String name, String id, String gender, double grade) {

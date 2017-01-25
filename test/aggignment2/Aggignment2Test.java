@@ -25,6 +25,30 @@ public class Aggignment2Test {
      * Test of main method, of class Assignment2.
      */
     @Test
+    public void testNoArg() {
+        Student instance = new Student();
+        Student instance2 = new Student();
+        instance2.setId("");
+        instance2.setGender("");
+        instance2.setName("");
+        instance2.setGrade(0);
+        boolean expectedresult = true;
+        boolean result = instance.equals(instance2);
+        assertEquals("Testing no arg constructor", expectedresult, result);
+    }
+     @Test
+    public void testFullArg() {
+        Student instance = new Student("bob","C1231","Male",90.99);
+        Student instance2 = new Student();
+        instance2.setId("C1231");
+        instance2.setGender("Male");
+        instance2.setName("bob");
+        instance2.setGrade(90.99);
+        boolean expectedresult = true;
+        boolean result = instance.equals(instance2);
+        assertEquals("Testing no arg constructor", expectedresult, result);
+    }
+    @Test
     public void testGetName() {
         System.out.println("getName");
         String name = "bob";
@@ -123,14 +147,38 @@ public class Aggignment2Test {
         Student instance = new Student();
         instance.setName("bob");
         instance.setId("C1231");
-        instance.setGender("male");
-        instance.setGrade(90.65);
         Student instance2 = new Student();
         instance2.setName("bob");
         instance2.setId("C1231");
-        instance2.setGender("male");
-        instance2.setGrade(90.65);
-        assertEquals(instance, instance2);
+        boolean expectedresult = true;
+        boolean result = instance.equals(instance2);
+        assertEquals(expectedresult, result);
+    }
+    @Test
+    public void testStudentEqualsId() {
+       System.out.println("equalsId");
+        Student instance = new Student();
+        instance.setName("bob");
+        instance.setId("C1231");
+        Student instance2 = new Student();
+        instance2.setName("bob");
+        instance2.setId("C1236");
+        boolean expectedresult = false;
+        boolean result = instance.equals(instance2);
+        assertEquals(expectedresult, result);
+    }
+    @Test
+    public void testStudentEqualsName() {
+       System.out.println("equalsName");
+        Student instance = new Student();
+        instance.setName("Toaster");
+        instance.setId("C1231");
+        Student instance2 = new Student();
+        instance2.setName("bob");
+        instance2.setId("C1231");
+        boolean expectedresult = false;
+        boolean result = instance.equals(instance2);
+        assertEquals(expectedresult, result);
     }
     @Test
     public void testStudentToString() {
