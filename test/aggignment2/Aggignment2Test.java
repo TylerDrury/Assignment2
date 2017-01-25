@@ -155,6 +155,15 @@ public class Aggignment2Test {
         assertEquals(expectedresult, result);
     }
     @Test
+    public void testStudentEqualsObject() {
+        System.out.println("equals");
+        Student instance = new Student();
+        Course instance2 = new Course();
+        boolean expectedresult = false;
+        boolean result = instance.equals(instance2);
+        assertEquals(expectedresult, result);
+    }
+    @Test
     public void testStudentEqualsId() {
        System.out.println("equalsId");
         Student instance = new Student();

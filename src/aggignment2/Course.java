@@ -90,10 +90,11 @@ public class Course{
         }
         return null;
     }*/
-
+/*
     @Override
     public String toString() {
-        return "course{" + "temp=" + temp + '}';
+        
+    return "course{" + "temp=" + temp + '}';
         JSONObject json = new JSONObject();
         json.put("name",name );
         json.put("id",id );
@@ -112,5 +113,5 @@ public class Course{
                 
     }
     
-    
+    */
 }
