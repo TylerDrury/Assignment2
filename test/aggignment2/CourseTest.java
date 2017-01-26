@@ -35,6 +35,16 @@ public class CourseTest {
     public void TestShouldReturnSameAsListProvided(){
      
     }
+    @Test
+    public void TestShouldReturnStudent(){
+        
+    }
+    
+    @Test
+    public void TestShouldReturnAllOrignalStudent(){
+    
+    }
+            
 }
     
       
