@@ -49,7 +49,7 @@ public class Course{
         return temp.get(id);
     }
     
-    public List<Student> getall() {
+    public List<Student> getAll() {
         
         return temp;
         

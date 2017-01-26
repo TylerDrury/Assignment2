@@ -20,23 +20,22 @@ import org.junit.Test;
  */
 public class CourseTest {
 
-    public CourseTest() {
+    
+    @Test 
+    public void testGetAll(){
+    Course instance = new Course();
+        List<Student> Result = instance.getAll();
+        
+        assertEquals(Result, instance.getAll());
+        
+        
     }
-
-    /**
-     * Test of main method, of class Assignment2.
-     */
-   // @Test 
-    //public void testGetAll(){
-      //  Course instance = new Course();
-        //List<Student> Result = instance.getAll();
-        
-        //assertEquals(Result, Course.getAll());
-        
-        
-   // }
+    
+    @Test
+    public void TestShouldReturnSameAsListProvided(){
+     
+    }
+}
     
       
-   // }
-  
-}
+   
